@@ -82,7 +82,7 @@ d3pm2/
 
 1. Clone the repository:
 ```bash
-cd /mnt/kedargouri/rishi/project/d3pm/d3pm2
+git clone https://github.com/ranonymous1111/idea_privx.git
 ```
 
 2. Create a virtual environment (recommended):
