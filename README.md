@@ -18,35 +18,6 @@ Both variants leverage the key insight that Gaussian DP mechanisms are structura
 4. **Heterophilic Graph Support**: Theoretical characterization showing anti-correlation signals survive DP noise
 5. **Comprehensive Evaluation**: Seven benchmark datasets, four explainers, three DP mechanisms with full adaptive-attacker ablations
 
-## Project Structure
-
-```
-d3pm2/
-├── src/
-│   ├── run.py                      # Main runner for PrivF attacks (feature-based)
-│   ├── run_exp.py                  # Runner for PrivX attacks (explanation-based)
-│   ├── phase_01_data.py            # Data preparation and subgraph extraction
-│   ├── phase_03_train.py           # Model training with diffusion
-│   ├── phase_05_ablation.py        # Evaluation and ablation studies
-│   ├── models/
-│   │   ├── diffusion.py            # Diffusion model implementations
-│   │   └── gnn.py                  # GNN architectures (GCN, GIN, GraphSAGE)
-│   └── utils/
-│       ├── dp_mechanisms.py        # DP noise mechanisms (Gaussian, Laplace, Renyi)
-│       ├── graph_utils.py          # Graph utilities and metrics
-│       └── data_loaders.py         # Dataset loading utilities
-├── data/                           # Pre-processed datasets (downloaded automatically)
-├── data_exp/                       # Explanation-based datasets
-├── saved_explanations/             # Pre-computed GNN explanations
-├── results/                        # Training outputs and model checkpoints
-├── neurips/
-│   └── latex/
-│       ├── main.tex               # Main paper (NeurIPS 2026 submission)
-│       └── revised_theorems.tex   # Theoretical appendix with proofs
-├── requirements.txt               # Python dependencies
-└── README.md                      # This file
-```
-
 ## Supported Datasets
 
 ### Citation Networks (Homophilic)
